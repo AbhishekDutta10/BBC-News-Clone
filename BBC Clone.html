@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technology - BBC News</title>
+    <style>
+        *{box-sizing: border-box;margin:0;padding:0; font-family: Arial, Helvetica, sans-serif;}
+        #topbar,#body{
+            width: 95%;
+            margin: 0 auto;
+            /* background-color: red; */
+        }
+        #topbar-first-section{
+            height: 40px;
+        }
+        #logo{
+            margin: 8px;
+            float: left;
+        }
+        #user-logo{
+            height: 25px;
+            float: left;
+        }
+        .topbar-section{
+            border-left: 1px solid #cccccc;
+            float: left;
+            height: 100%;
+            padding: 8px 15px;
+        }
+        .topbar-span{
+            float: left;
+            margin: 4px 15px;
+        }
+        .topbar-search{
+            height: 25px;
+            background-color: #E4E4E4;
+            border: none;
+            padding: 0 5px;
+        }
+        #search-icon{
+            transform: translate(-30px,5px);
+        }
+        #topbar-second-section{
+            background-color: #BB1919;
+            height: 91px;
+        }
+        #topbar-third-section{
+            background-color: #A91717;
+            height: 40px;
+            padding: 14px 5px;
+        }
+        #topbar-second-section span{
+            border: 1px solid #BB4545;
+            padding: 12px;
+            color:white;
+            float: right;
+            margin: 24px;
+
+        }
+        #topbar-third-section span{
+            border-left: 1px solid #BB4545;
+            color:white;
+            padding: 0  12px 5px;
+            cursor: pointer;
+            
+
+        }
+        #topbar-third-section span:first-child{
+            border-left: none;
+        }
+        #topbar-third-section span:hover{
+            border-bottom: 5px solid white;
+        }
+        #topbar-h{
+            color: white;
+            font-size: 70px;
+            margin: 10px 20px;
+            display: inline-block;
+            position: relative;
+        }
+        #body{
+            padding: 20px;
+        }
+
+        #body>h1{
+            font-weight: lighter;
+            border-bottom: 3px solid #BB1919;
+            display: inline-block;
+            margin-left: 15px;
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+        #section-head{
+            border-right: 1px solid #DBDBDB;
+            border-bottom: 1px solid #DBDBDB;
+            padding-right: 12px;
+            margin-right: 7px;
+            float: left;
+        }
+        #section{
+            margin-left: 20px;
+            overflow: hidden;
+        }
+        #section-content{  
+            width: 250px;
+            margin: 12px 0;
+            float: left;
+            color: gray;
+        }
+        #section-content p{
+            margin: 7px 0;
+        }
+        #section-content p span{
+            color: #BB1919;
+        }
+        #section-content p:nth-child(2){
+            font-size: small;
+            margin-left: 15px;
+        }
+        #section-image, #section-image img{
+            display: inline-block;
+            width: 500px;
+            margin: 12px;
+        }
+        #section #aside{
+            float: left;
+            
+        }
+        #section #aside h1{
+            color: #404040;
+            font-weight: lighter;
+            
+        }
+        .video{
+            width: 100%;
+            overflow: hidden;
+            padding: 7px;
+            margin: 7px 0;
+        }
+        .video-box img{
+            width: 100px;
+        }
+        .video-box{
+            float: left;
+        }
+        .video-content{
+            display: inline-block;
+            margin: 2px 7px;
+            padding: 0 3px;
+            width:250px;
+
+        }
+        .video-content span{
+            color: #686868;
+            font-size: 100%;
+            font-weight: bold;
+        }
+        .video-time{
+            font-size: small;
+            color: #686868;
+            overflow: hidden;
+            margin: 7px 15px;
+
+        }
+    </style>
+</head>
+<body>
+    <div id="topbar">
+
+        <div id="topbar-first-section">
+        <img id='logo' src="http://completewebdevelopercourse.com/clone/index_files/bbc-blocks-dark.png" alt="bbc logo">
+        <div class="topbar-section">
+            <img id="user-logo" src="https://cdn-icons-png.flaticon.com/512/64/64572.png" alt="user logo">
+            <span class="topbar-span">Sign In</span>
+        </div>
+        <div class="topbar-section">
+            <span class="topbar-span">Home</span>
+        </div>
+        <div class="topbar-section">
+            <span class="topbar-span">News</span>
+        </div>
+        <div class="topbar-section">
+            <span class="topbar-span">Sports</span>
+        </div>
+        <div class="topbar-section">
+            <span class="topbar-span">Weather</span>
+        </div>
+        <div class="topbar-section">
+            <span class="topbar-span">More</span>
+        </div>
+        <div class="topbar-section">
+            <input class="topbar-search" type="text" placeholder="Search">
+            <img id="search-icon" src="http://completewebdevelopercourse.com/clone/index_files/orb-search-dark.png" alt="search">
+        </div>
+    </div>
+    <div id="topbar-second-section">
+        <h1 id="topbar-h">NEWS</h1>
+        <span>Find Local News</span>
+    </div>
+    <div id="topbar-third-section">
+        <span>Home</span>
+        <Span>UK</Span>
+        <span>World</span>
+        <span>Business</span>
+        <span>Politics</span>
+        <span>Tech</span>
+        <span>Science</span>
+        <span>Health</span>
+        <span>Education</span>
+        <span>Entertainment & Arts</span>
+        <span>Video & Audio</span>
+        <span>More</span>
+    </div>
+
+    </div>
+    <div id="body">
+        <h1>Technology</h1>
+        <div id="section">
+            <div id="section-head">
+                <h1>Asda bug exposed payment details</h1>
+                <div id="section-content">
+                    <p>Security vulnerabilities that put customers at risk have affected Asda's website for a couple of years, a security expert has revealed.</p>
+                    <p>2 hours ago | <span>Technology</span></p>
+                    <p style="color:black; line-height: 1.5rem;">Surveillance firm hit in hack attack eBay flaw has existed for months</p>
+                </div>
+                <div id="section-image">
+                    <img src="https://ichef.bbci.co.uk/news/976/cpsprodpb/F134/production/_87784716_asda.gif.webp" alt="ASDA">
+                </div>
+            </div>
+            <div id="aside">
+                <h1>Watch/Listen</h1>
+                <div class="video">
+                    <div class="video-box">
+                        <img src="https://foreignpolicy.com/wp-content/uploads/2023/06/UK-CRYPTO-SUNAK-GettyImages-1258632005.png?resize=1000,667&quality=90" alt="">
+                    </div>
+                    <div class="video-content">
+                        <span>UK science chief backs blockchains</span>
+                        <p class="video-time">1 Hour Ago</p>
+                    </div>
+
+                </div>
+                <div class="video">
+                    <div class="video-box">
+                        <img src="https://c.files.bbci.co.uk/BB51/production/_87735974_87326995.jpg" alt="">
+                    </div>
+                    <div class="video-content">
+                        <span>Drone register gives 'accountability'</span>
+                        <p class="video-time">18 January 2016</p>
+                    </div>
+
+                </div>
+                <div class="video">
+                    <div class="video-box">
+                        <img src="https://static.toiimg.com/thumb/msid-80659607,width-400,resizemode-4/80659607.jpg" alt="">
+                    </div>
+                    <div class="video-content">
+                        <span>SpaceX rocket explodes during landing</span>
+                        <p class="video-time">18  January 2016</p>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+
